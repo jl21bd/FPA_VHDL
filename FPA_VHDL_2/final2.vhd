@@ -59,7 +59,8 @@ architecture Behavioral of final2 is
     end pollination_global;
 
     -- function to calculate the local pollination value
-    function pollination_local(local_vector: real_vector; position: real_vector; xxx: real; min: integer;                                                               max: integer) return real_vector is 
+    function pollination_local(local_vector: real_vector; position: real_vector; xxx: real; min: integer;                                                               
+                                             max: integer) return real_vector is 
         variable x: real_vector(1 to 2);
         variable delta: real;
         variable r: real;
